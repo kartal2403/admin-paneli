@@ -1,7 +1,7 @@
 <?php
 include("../ayar.php");
-// -Tekli- Veri Çekme
-//Þimdi 1 Güvenli
+// -Tekli- Veri Ã‡ekme
+//Ãžimdi 1 GÃ¼venli
 $veri1	= $vt->prepare("select * from admin where id=?");
 $veri1->execute(array("1"));
 $islem1	= $veri1->fetch();
@@ -26,17 +26,17 @@ $islem1	= $veri1->fetch();
 ?>
 	<h1>Admin Paneli</h1>
 	
-	<!-- Menü -->
+	<!-- MenÃ¼ -->
 	<h4><a href="../" target="_blank">Siteyi G&ouml;r&uuml;nt&uuml;le</a> - <a href="." >Yenile</a></h4>
-	<!-- /Menü -->
+	<!-- /MenÃ¼ -->
 	
 	<form action="" method="post">
 	
 	<!-- Logo -->
-	Logo:<br>
+	Logo:<b r > 
 	<input type="text" value="<?php echo $islem1["logo"]; ?>" name="logo"/><br>
-	<!-- /Logo -->
-	
+			<!-- /Logo -->
+	   
 	<!-- arkaplan -->
 	Arkaplan:<br>
 	<input type="text" value="<?php echo $islem1["arkaplan"]; ?>" name="arkaplan"/><br>
